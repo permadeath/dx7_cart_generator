@@ -1,8 +1,9 @@
 from english_words import english_words_lower_alpha_set
 import serial
 
-#   Choose serial port
-ser_port = 'COM5'
+#   Choose serial port.  If unknown, refer to TrueRNG V3
+#   documentation and/or your OS documentation.
+ser_port = ''
 
 # Generate a list of 4096 7-letter English words
 patch_name_list = []
