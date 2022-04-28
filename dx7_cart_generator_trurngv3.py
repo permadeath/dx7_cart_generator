@@ -11,7 +11,7 @@ words = list(english_words_lower_alpha_set)
 for check in range(len(words)):
     if len(words[check]) == 7:
         patch_name_list.append(words[check])
-with serial.Serial('COM5', 19200, timeout=1) as ser:
+with serial.Serial(ser_port, 19200, timeout=1) as ser:
     x = ser.read(4117)
 low_byte = list(x)
 for i in range(21):
